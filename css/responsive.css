@@ -1,0 +1,222 @@
+/* Tablet (Max 1024px) */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .hero-bg-text {
+        font-size: 15vw;
+    }
+}
+
+/* Tablet / Mobile Switch (Max 768px) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .hero {
+        padding: 100px 0 60px;
+    }
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to bottom, rgba(1, 4, 8, 0.7) 0%, rgba(1, 4, 8, 0.9) 100%);
+        z-index: 2;
+    }
+
+    .hero-layout {
+        grid-template-columns: 1fr;
+        padding: 0 var(--sp-6);
+        text-align: center;
+        gap: 30px;
+        height: auto;
+        position: relative;
+        z-index: 10;
+    }
+
+    .hero-center {
+        order: -1;
+        height: 280px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .hero-portrait {
+        height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+        mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    }
+
+    .hero-name {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+
+    .hero-tagline {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin: 0 auto 20px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .stat-num {
+        font-size: 2.5rem;
+    }
+
+    .hero-btns {
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .work-preview-card, .hero-bio-snippet {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .social-sidebar {
+        display: none;
+    }
+
+    /* Hide sidebar on mobile for cleaner look */
+    .hero-bg-text {
+        display: none;
+    }
+
+    /* Hide large background text on mobile */
+
+    .index-section-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--sp-8);
+    }
+
+    .timeline::before,
+    .timeline-path {
+        left: 20px;
+        transform: none;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 0;
+        text-align: left !important;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline-node {
+        left: 12px !important;
+        right: auto !important;
+    }
+}
+
+/* Mobile (Max 480px) */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .pub-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .pub-number {
+        margin: 0 auto;
+    }
+
+    .pub-actions {
+        justify-content: center;
+    }
+
+    .pub-impact {
+        margin: 10px auto 0;
+    }
+
+    .hexagon-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .hexagon {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+        clip-path: none;
+        border-radius: var(--radius-md);
+        background: var(--glass);
+    }
+
+    .section {
+        padding: var(--sp-12) 0;
+    }
+}
+
+/* Global Layout Shifts */
+@media (max-width: 1024px) {
+    .container { padding: 0 var(--sp-4); }
+}
+
+@media (max-width: 768px) {
+    .section { padding: var(--sp-12) 0; }
+    
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .hero-bg-text {
+        display: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* Visibility Utilities */
+@media (max-width: 768px) {
+    .hidden-mobile { display: none !important; }
+    .visible-mobile { display: block !important; }
+}
+
+@media (min-width: 769px) {
+    .visible-mobile { display: none !important; }
+}

@@ -1,0 +1,158 @@
+/* CV Page Specific Styles */
+
+.cv-top-bar {
+    background: var(--glass-dark);
+    backdrop-filter: blur(20px);
+    padding: 15px 0;
+    border-bottom: 1px solid var(--glass-border);
+    position: sticky;
+    top: 69px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cv-btn {
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 8px 20px;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.cv-btn:hover { background: var(--accent); color: white; }
+.cv-btn.primary { background: var(--accent); color: white; }
+
+.toggle-wrap { display: flex; align-items: center; gap: 10px; color: var(--text-muted); font-size: 0.85rem; }
+.toggle-switch {
+    width: 50px; height: 24px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.toggle-circle {
+    width: 18px; height: 18px;
+    background: var(--accent);
+    border-radius: 50%;
+    position: absolute;
+    top: 3px; left: 3px;
+    transition: transform 0.3s;
+}
+.print-mode .toggle-circle { transform: translateX(26px); background: #333; }
+.print-mode .toggle-switch { background: #eee; }
+
+/* CV Content Shell */
+.cv-shell {
+    max-width: 1000px;
+    margin: 60px auto 100px;
+    padding: 80px;
+    background: var(--glass-dark);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    transition: all 0.5s ease;
+}
+
+/* Print Mode Styling */
+.print-mode .cv-shell {
+    background: #ffffff;
+    color: #000000;
+    border: none;
+    box-shadow: none;
+    padding: 40px;
+    border-radius: 0;
+}
+.print-mode .navbar, .print-mode .footer, .print-mode .cv-top-bar, .print-mode #particles-container { display: none; }
+.print-mode body { background: #fff !important; }
+.print-mode .text-muted { color: #666 !important; }
+.print-mode .text-accent, .print-mode .pub-authors b { color: #000 !important; font-weight: bold; }
+.print-mode .section-title { color: #000; border-bottom: 2px solid #000; padding-bottom: 5px; }
+
+/* CV Header */
+.cv-header { text-align: center; margin-bottom: 60px; }
+.cv-name { font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 900; margin-bottom: 10px; }
+.cv-title { font-size: 1.25rem; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 24px; }
+.cv-contact { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; font-size: 0.9rem; color: var(--text-muted); }
+.cv-interests { display: flex; justify-content: center; gap: 10px; margin-top: 30px; flex-wrap: wrap; }
+.interest-pill { font-size: 0.75rem; background: rgba(255,255,255,0.05); padding: 5px 15px; border-radius: 100px; color: var(--text-muted); }
+.print-mode .interest-pill { border: 1px solid #ddd; }
+
+/* CV Sections */
+.cv-section { margin-bottom: 60px; }
+.cv-section-title { 
+    font-family: 'Playfair Display', serif; 
+    font-size: 1.75rem; 
+    margin-bottom: 30px; 
+    color: var(--accent); 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+}
+.cv-section-title::after { content: ''; flex: 1; height: 1px; background: var(--glass-border); }
+
+/* Timeline */
+.cv-timeline { border-left: 2px solid var(--accent); margin-left: 20px; padding-left: 40px; }
+.timeline-item { position: relative; margin-bottom: 40px; }
+.timeline-item::before { 
+    content: ''; 
+    position: absolute; 
+    left: -49px; top: 0; 
+    width: 16px; height: 16px; 
+    background: var(--dark-bg); 
+    border: 2px solid var(--accent); 
+    border-radius: 50%; 
+}
+.timeline-date { font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: var(--accent-warm); margin-bottom: 8px; display: block; }
+.timeline-heading { font-size: 1.2rem; font-weight: 700; margin-bottom: 4px; }
+.timeline-sub { font-size: 1rem; color: white; margin-bottom: 8px; }
+.timeline-details { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
+
+/* Experience Cards */
+.exp-card { background: var(--glass); border: 1px solid var(--glass-border); padding: 25px; border-radius: var(--radius-md); margin-bottom: 20px; }
+.exp-header { display: flex; justify-content: space-between; margin-bottom: 12px; align-items: flex-start; }
+.exp-list { list-style: none; margin-top: 15px; }
+.exp-list li { position: relative; padding-left: 20px; margin-bottom: 8px; font-size: 0.9rem; color: var(--text-muted); }
+.exp-list li::before { content: '●'; position: absolute; left: 0; color: var(--accent); font-size: 0.7rem; }
+
+/* Publications Summary */
+.pub-summary { font-size: 0.85rem; line-height: 1.5; color: var(--text-muted); }
+.pub-entry { margin-bottom: 15px; padding-left: 15px; border-left: 1px solid var(--glass-border); }
+.pub-entry b { color: var(--accent); }
+
+/* Award Grid */
+.award-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.award-card { 
+    background: var(--glass-dark); 
+    border-top: 3px solid var(--accent-warm); 
+    padding: 24px; 
+    border-radius: var(--radius-md); 
+    transition: transform 0.3s; 
+}
+.award-card:hover { transform: scale(1.02); }
+.award-icon { color: var(--accent-warm); margin-bottom: 12px; font-size: 1.2rem; }
+
+/* Skills */
+.skill-row { margin-bottom: 20px; }
+.skill-label { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.9rem; }
+.skill-bar-bg { height: 6px; background: rgba(255,255,255,0.05); border-radius: 3px; overflow: hidden; }
+.skill-bar-fill { height: 100%; background: var(--accent); border-radius: 3px; transform: scaleX(0); transform-origin: left; transition: transform 1.5s cubic-bezier(0.1, 0.5, 0.5, 1); }
+
+@media print {
+    .cv-top-bar, .navbar, .footer, #particles-container { display: none !important; }
+    body { background: white !important; color: black !important; padding: 0 !important; }
+    .cv-shell { width: 100% !important; max-width: none !important; margin: 0 !important; padding: 2cm !important; background: white !important; box-shadow: none !important; border: none !important; }
+    .cv-section-title { color: black !important; border-bottom: 1px solid #333 !important; }
+    .skill-bar-fill { background: #333 !important; }
+    .text-accent, .timeline-date, .cv-title { color: #000 !important; font-weight: bold !important; }
+}
+
+@media (max-width: 768px) {
+    .cv-shell { padding: 40px 20px; }
+    .cv-name { font-size: 2.5rem; }
+    .award-grid { grid-template-columns: 1fr; }
+}
