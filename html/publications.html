@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research publications of Aejaz Ul Bashir. Impact metrics, journal articles, and conference presentations in Electrochemistry.">
+    <title>Publications | Aejaz Ul Bashir</title>
+    
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/publications.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="dark-mode">
+
+    <!-- Canvas Background -->
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" role="navigation">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <div class="logo-icon">AUB</div>
+                <span>Aejaz Ul Bashir</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="publications.html" class="nav-link active">Publications</a>
+                <a href="cv.html" class="nav-link">CV</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <a href="../index.html" class="mobile-link">Home</a>
+        <a href="about.html" class="mobile-link">About</a>
+        <a href="research.html" class="mobile-link">Research</a>
+        <a href="publications.html" class="mobile-link active">Publications</a>
+        <a href="cv.html" class="mobile-link">CV</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Hero Banner -->
+    <section class="pub-hero">
+        <div class="container">
+            <div class="impact-stats anim-stagger">
+                <div class="stat-card anim-fade-up">
+                    <div class="stat-number" data-target="192">0</div>
+                    <div class="stat-label">Total Citations</div>
+                </div>
+                <div class="stat-card anim-fade-up">
+                    <div class="stat-number" data-target="8">0</div>
+                    <div class="stat-label">h-index</div>
+                </div>
+                <div class="stat-card anim-fade-up">
+                    <div class="stat-number" data-target="18">0</div>
+                    <div class="stat-label">Publications</div>
+                </div>
+            </div>
+            <div class="hero-links anim-fade-up" style="transition-delay: 600ms;">
+                <a href="https://scholar.google.com/citations?user=hjD2JRMAAAAJ&hl=en" class="pill-link" target="_blank">Google Scholar ↗</a>
+                <a href="https://www.researchgate.net/profile/Aejaz-Ul-Bashir" class="pill-link" target="_blank">ResearchGate ↗</a>
+                <a href="https://orcid.org/0000-0002-2627-6318" class="pill-link" target="_blank">ORCID ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky Filter Bar -->
+    <div class="sticky-filter">
+        <div class="container">
+            <div class="filter-wrapper">
+                <div class="filter-group" id="year-filters">
+                    <button class="filter-btn active" data-filter="all">All (18)</button>
+                    <button class="filter-btn" data-filter="2026">2026</button>
+                    <button class="filter-btn" data-filter="2025">2025</button>
+                    <button class="filter-btn" data-filter="2024">2024</button>
+                    <button class="filter-btn" data-filter="2023">2023</button>
+                </div>
+                <div class="search-container">
+                    <svg class="search-icon" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+                    <input type="text" id="pub-search" class="search-input" placeholder="Search title, journal, keyword...">
+                </div>
+                <div class="filter-group" id="type-filters">
+                    <button class="filter-btn active" data-type="all">All Types</button>
+                    <button class="filter-btn" data-type="journal">Journal</button>
+                    <button class="filter-btn" data-type="conference">Conference</button>
+                    <button class="filter-btn" data-type="preprint">Preprint</button>
+                </div>
+            </div>
+            <div class="result-count">Showing <span id="current-count" class="text-accent">18</span> of 18 publications</div>
+        </div>
+    </div>
+
+    <!-- Publications Grid -->
+    <main class="container">
+        <div class="pub-grid" id="publications-container">
+            
+            <!-- [1] 2025 ACS Electrochemistry -->
+            <div class="pub-item first-author anim-fade-up" data-year="2025" data-type="journal">
+                <span class="badge-star">★</span>
+                <div class="pub-header">
+                    <div class="pub-meta">
+                        <span class="pub-index">[1]</span>
+                        <span class="pub-year">2025</span>
+                        <span class="pub-journal-name">ACS Electrochemistry</span>
+                    </div>
+                </div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1021/acselectrochem.5c00025" target="_blank">Understanding the modulated electrocatalytic H2 generation activity of surface functionalized Ti2C MXenes using the potential of zero charge and electron transfer coefficient as electrochemical descriptors</a></h3>
+                <p class="pub-authors"><b>A. U. Bashir</b>, P. P. Ingole</p>
+                <div class="pub-details">Vol 1, 1055–1065</div>
+                <div class="pub-footer">
+                    <div class="pub-tags">
+                        <span class="tag">MXene</span>
+                        <span class="tag">H2 Generation</span>
+                        <span class="tag">Electrocatalysis</span>
+                    </div>
+                    <div class="pub-btns">
+                        <button class="btn-doi" onclick="window.open('https://doi.org/10.1021/acselectrochem.5c00025')">DOI</button>
+                        <button class="btn-cite" data-cite="Bashir, A. U., & Ingole, P. P. (2025). ACS Electrochemistry, 1, 1055.">Cite</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [2] 2025 Small -->
+            <div class="pub-item first-author anim-fade-up" data-year="2025" data-type="journal">
+                <span class="badge-star">★</span>
+                <div class="pub-header">
+                    <div class="pub-meta">
+                        <span class="pub-index">[2]</span>
+                        <span class="pub-year">2025</span>
+                        <span class="pub-journal-name">Small</span>
+                    </div>
+                </div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1002/smll.202409457" target="_blank">Activating the basal planes of Ti2C MXene for accelerated ammonia electrosynthesis: Role of surface terminations</a></h3>
+                <p class="pub-authors"><b>A. U. Bashir</b>, P. P. Ingole</p>
+                <div class="pub-details">Vol 21, 2409457</div>
+                <div class="pub-footer">
+                    <div class="pub-tags">
+                        <span class="tag">MXene</span>
+                        <span class="tag">Ammonia</span>
+                        <span class="tag">N2 Reduction</span>
+                    </div>
+                    <div class="pub-btns">
+                        <button class="btn-doi" onclick="window.open('https://doi.org/10.1002/smll.202409457')">DOI</button>
+                        <button class="btn-cite" data-cite="Bashir, A. U., & Ingole, P. P. (2025). Small, 21, 2409457.">Cite</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [3] 2026 JMCA -->
+            <div class="pub-item anim-fade-up" data-year="2026" data-type="journal">
+                <div class="pub-header">
+                    <div class="pub-meta">
+                        <span class="pub-index">[3]</span>
+                        <span class="pub-year">2026</span>
+                        <span class="pub-journal-name">Journal of Materials Chemistry A</span>
+                    </div>
+                </div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1039/D5TA08539J" target="_blank">Boosting the syngas production of a SrTiO3 photocathode via plasmonic hot electron injection from an Ag underlayer</a></h3>
+                <p class="pub-authors">G. Sanfo#, <b>A. U. Bashir#</b>, N. Rashid#, S. Huanga, P. P. Ingole, M. Abdi-Jalebi</p>
+                <div class="pub-details">2026 Issue</div>
+                <div class="pub-footer">
+                    <div class="pub-tags">
+                        <span class="tag">SrTiO3</span>
+                        <span class="tag">Syngas</span>
+                        <span class="tag">Plasmonic</span>
+                    </div>
+                    <div class="pub-btns">
+                        <button class="btn-doi" onclick="window.open('https://doi.org/10.1039/D5TA08539J')">DOI</button>
+                        <button class="btn-cite" data-cite="Sanfo, G., et al. (2026). Journal of Materials Chemistry A.">Cite</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [4] 2025 ChemCatChem -->
+            <div class="pub-item anim-fade-up" data-year="2025" data-type="journal">
+                <div class="pub-header">
+                    <div class="pub-meta">
+                        <span class="pub-index">[4]</span>
+                        <span class="pub-year">2025</span>
+                        <span class="pub-journal-name">ChemCatChem</span>
+                    </div>
+                </div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1002/cctc.202501281" target="_blank">Engineering Cu2O Growth on Titanium Substrate via an MXene Interfacial Layer for Enhanced Photoelectrochemical Performance</a></h3>
+                <p class="pub-authors">D. Sharma, <b>A. U. Bashir</b>, J. Yadav, P. P. Ingole</p>
+                <div class="pub-details">Vol 17, e01281</div>
+                <div class="pub-footer">
+                    <div class="pub-tags">
+                        <span class="tag">Cu2O</span>
+                        <span class="tag">MXene</span>
+                        <span class="tag">Photoelectrochemical</span>
+                    </div>
+                    <div class="pub-btns">
+                        <button class="btn-doi" onclick="window.open('https://doi.org/10.1002/cctc.202501281')">DOI</button>
+                        <button class="btn-cite" data-cite="Sharma, D., et al. (2025). ChemCatChem, 17, e01281.">Cite</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [5] 2025 JMCA -->
+            <div class="pub-item anim-fade-up" data-year="2025" data-type="journal">
+                <div class="pub-header">
+                    <div class="pub-meta">
+                        <span class="pub-index">[5]</span>
+                        <span class="pub-year">2025</span>
+                        <span class="pub-journal-name">Journal of Materials Chemistry A</span>
+                    </div>
+                </div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1039/D5TA06531C" target="_blank">Hydrogen evolution on halogenated MXenes via surface termination engineering: a data-informed computational and experimental strategy</a></h3>
+                <p class="pub-authors">A. Kumari, S. Singh, R. Munde, <b>A. U. Bashir</b>, P. P. Ingole, D. Ghosh</p>
+                <div class="pub-details">Vol 13, 42410-42426</div>
+                <div class="pub-footer">
+                    <div class="pub-tags">
+                        <span class="tag">HER</span>
+                        <span class="tag">MXene</span>
+                        <span class="tag">DFT</span>
+                    </div>
+                    <div class="pub-btns">
+                        <button class="btn-doi" onclick="window.open('https://doi.org/10.1039/D5TA06531C')">DOI</button>
+                        <button class="btn-cite" data-cite="Kumari, A., et al. (2025). Journal of Materials Chemistry A, 13, 42410.">Cite</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [6] 2024 ACS AMI -->
+            <div class="pub-item anim-fade-up" data-year="2024" data-type="journal">
+                <div class="pub-header">
+                    <div class="pub-meta">
+                        <span class="pub-index">[6]</span>
+                        <span class="pub-year">2024</span>
+                        <span class="pub-journal-name">ACS Applied Materials & Interfaces</span>
+                    </div>
+                </div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1021/acsami.4c05487" target="_blank">Engineered Electron-Deficient Sites at Boron-Doped Strontium Titanate/Electrolyte Interfaces Accelerate the Electrocatalytic Reduction of N2 to NH3</a></h3>
+                <p class="pub-authors">P. Kalra, M. Samolia, <b>A. U. Bashir</b>, V. D. Avasare, P. P. Ingole</p>
+                <div class="pub-details">Vol 16, 37938-37951</div>
+                <div class="pub-footer">
+                    <div class="pub-tags">
+                        <span class="tag">N2 Reduction</span>
+                        <span class="tag">SrTiO3</span>
+                        <span class="tag">DFT</span>
+                    </div>
+                    <div class="pub-btns">
+                        <button class="btn-doi" onclick="window.open('https://doi.org/10.1021/acsami.4c05487')">DOI</button>
+                        <button class="btn-cite" data-cite="Kalra, P., et al. (2024). ACS Applied Materials & Interfaces, 16, 37938.">Cite</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [7] 2023 Nanoscale Adv -->
+            <div class="pub-item anim-fade-up" data-year="2023" data-type="journal">
+                <div class="pub-header">
+                    <div class="pub-meta">
+                        <span class="pub-index">[7]</span>
+                        <span class="pub-year">2023</span>
+                        <span class="pub-journal-name">Nanoscale Advances</span>
+                    </div>
+                </div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1039/D3NA00596H" target="_blank">Phase-controlled green synthesis of wurtzite (P63mc) ZnO nanoparticles: interplay of green ligands with precursor anions, anisotropy, and photocatalysis</a></h3>
+                <p class="pub-authors">L. M. Verma, A. Kumar, <b>A. U. Bashir</b>, U. Gangwar, P. P. Ingole, S. Sharma</p>
+                <div class="pub-details">Vol 6, 155-169</div>
+                <div class="pub-footer">
+                    <div class="pub-tags">
+                        <span class="tag">ZnO</span>
+                        <span class="tag">Green Synthesis</span>
+                        <span class="tag">Photocatalysis</span>
+                    </div>
+                    <div class="pub-btns">
+                        <button class="btn-doi" onclick="window.open('https://doi.org/10.1039/D3NA00596H')">DOI</button>
+                        <button class="btn-cite" data-cite="Verma, L. M., et al. (2023). Nanoscale Advances, 6, 155.">Cite</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [8] 2025 Adv Sust Syst -->
+            <div class="pub-item anim-fade-up" data-year="2025" data-type="journal">
+                <div class="pub-header">
+                    <div class="pub-meta">
+                        <span class="pub-index">[8]</span>
+                        <span class="pub-year">2025</span>
+                        <span class="pub-journal-name">Advanced Sustainable Systems</span>
+                    </div>
+                </div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1002/adsu.202500112" target="_blank">Co(II)-Imidazolate-Based Metal-Organic Frameworks as Efficient Bifunctional Electrocatalysts for Water Oxidation and Electroreduction of Nitrogen to Ammonia</a></h3>
+                <p class="pub-authors">S. Nabi, M. M. Bhat, A. Hamid, A. Y. Bhat, <b>A. U. Bashir</b>, Q. Jan, P. P. Ingole</p>
+                <div class="pub-details">Vol 9, e00112</div>
+                <div class="pub-footer">
+                    <div class="pub-tags">
+                        <span class="tag">MOF</span>
+                        <span class="tag">OER</span>
+                        <span class="tag">N2 Reduction</span>
+                    </div>
+                    <div class="pub-btns">
+                        <button class="btn-doi" onclick="window.open('https://doi.org/10.1002/adsu.202500112')">DOI</button>
+                        <button class="btn-cite" data-cite="Nabi, S., et al. (2025). Advanced Sustainable Systems, 9, e00112.">Cite</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [16] PREPRINT -->
+            <div class="pub-item anim-fade-up" data-year="2025" data-type="preprint">
+                <div class="pub-header">
+                    <div class="pub-meta">
+                        <span class="pub-index">[16]</span>
+                        <span class="pub-year">2025</span>
+                        <span class="pub-journal-name">ChemRxiv</span>
+                        <span class="badge-type badge-warning">Preprint</span>
+                    </div>
+                </div>
+                <h3 class="pub-title"><a href="#">Evolution of Shape Anisotropy in Iron Oxides Nanocrystals: Biogenic Ligand Field, and Photocatalytic Efficiency</a></h3>
+                <p class="pub-authors">LM Verma, <b>AU Bashir</b>, PP Ingole, S Sharma</p>
+                <div class="pub-details">Preprint 2025(0314)</div>
+                <div class="pub-footer">
+                    <div class="pub-tags">
+                        <span class="tag">Preprint</span>
+                        <span class="tag">Iron Oxide</span>
+                        <span class="tag">Photocatalysis</span>
+                    </div>
+                    <div class="pub-btns">
+                        <button class="btn-doi" onclick="window.open('#')">DOI</button>
+                        <button class="btn-cite" data-cite="Verma, L.M., et al. (2025). ChemRxiv Preprint.">Cite</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [17] SOLE AUTHOR CONFERENCE -->
+            <div class="pub-item anim-fade-up" data-year="2025" data-type="conference" style="background: rgba(0, 201, 167, 0.05);">
+                <div class="pub-header">
+                    <div class="pub-meta">
+                        <span class="pub-index">[17]</span>
+                        <span class="pub-year">2025</span>
+                        <span class="pub-journal-name">248th ECS Meeting</span>
+                        <span class="badge-type">Sole Author</span>
+                    </div>
+                </div>
+                <h3 class="pub-title"><a href="#">Understanding Electrocatalytic Reduction Reactions on Engineered MXene Surfaces Using Potential of Zero Charge and Electron Transfer Coefficient as Electrochemical Descriptors</a></h3>
+                <p class="pub-authors"><b>AU Bashir</b></p>
+                <div class="pub-details">Conference Presentation | October 12–16, 2025</div>
+                <div class="pub-footer">
+                    <div class="pub-tags">
+                        <span class="tag">Conference</span>
+                        <span class="tag">ECS</span>
+                        <span class="tag">MXene</span>
+                        <span class="tag">PZC</span>
+                    </div>
+                    <div class="pub-btns">
+                        <button class="btn-cite" data-cite="Bashir, A.U. (2025). 248th ECS Meeting.">Cite</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [18] SOLE AUTHOR CONFERENCE -->
+            <div class="pub-item anim-fade-up" data-year="2025" data-type="conference" style="background: rgba(0, 201, 167, 0.05);">
+                <div class="pub-header">
+                    <div class="pub-meta">
+                        <span class="pub-index">[18]</span>
+                        <span class="pub-year">2025</span>
+                        <span class="pub-journal-name">247th ECS Meeting</span>
+                        <span class="badge-type">Sole Author</span>
+                    </div>
+                </div>
+                <h3 class="pub-title"><a href="#">Accelerating C–C Coupling and Suppressing HER in Electrochemical CO2 Reduction with Cuprous Oxide Stabilized on Surface-Terminated Ti3C2Tx MXenes</a></h3>
+                <p class="pub-authors"><b>AU Bashir</b></p>
+                <div class="pub-details">Conference Presentation | May 18–22, 2025</div>
+                <div class="pub-footer">
+                    <div class="pub-tags">
+                        <span class="tag">Conference</span>
+                        <span class="tag">ECS</span>
+                        <span class="tag">CO2RR</span>
+                        <span class="tag">C-C Coupling</span>
+                    </div>
+                    <div class="pub-btns">
+                        <button class="btn-cite" data-cite="Bashir, A.U. (2025). 247th ECS Meeting.">Cite</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Citation Trends -->
+    <section class="chart-section">
+        <div class="container">
+            <div class="section-header anim-fade-up">
+                <span class="section-label">Growth Analytics</span>
+                <h2 class="section-title">Citation Trends</h2>
+            </div>
+            
+            <div class="chart-container anim-stagger">
+                <div class="chart-row anim-fade-up">
+                    <div class="chart-year">2023</div>
+                    <div class="chart-bar-bg"><div class="chart-bar-fill" data-width="53"></div></div>
+                    <div class="chart-val">59</div>
+                </div>
+                <div class="chart-row anim-fade-up">
+                    <div class="chart-year">2024</div>
+                    <div class="chart-bar-bg"><div class="chart-bar-fill" data-width="100"></div></div>
+                    <div class="chart-val">110</div>
+                </div>
+                <div class="chart-row anim-fade-up">
+                    <div class="chart-year">2025</div>
+                    <div class="chart-bar-bg"><div class="chart-bar-fill" data-width="21"></div></div>
+                    <div class="chart-val">23</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../index.html" class="nav-logo" style="margin-bottom: 20px;">
+                        <div class="logo-icon">AUB</div>
+                        <span>Aejaz Ul Bashir</span>
+                    </a>
+                    <p class="feature-desc" style="font-size: 0.9rem;">Advancing sustainable energy solutions through electrochemical innovation at the atomic scale.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="research.html">Research Areas</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="cv.html">Curriculum Vitae</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Current Institution</h4>
+                    <p class="feature-desc" style="font-size: 0.9rem;">
+                        Electrochemistry Division,<br>
+                        Department of Chemistry,<br>
+                        Indian Institute of Technology (IIT) Delhi,<br>
+                        Hauz Khas, New Delhi 110016
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://scholar.google.com/citations?user=hjD2JRMAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+                        <li><a href="https://www.researchgate.net/profile/Aejaz-Ul-Bashir" target="_blank">ResearchGate</a></li>
+                        <li><a href="https://orcid.org/0000-0002-2627-6318" target="_blank">ORCID</a></li>
+                        <li><a href="https://www.linkedin.com/in/aejaz-ul-bashir-4b4719210/" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aejaz Ul Bashir &middot; Designed with precision</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast">BibTeX copied!</div>
+
+    <!-- Scripts -->
+    <script src="../js/particles.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // CountUp Logic
+            const stats = document.querySelectorAll('.stat-number');
+            const obs = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = entry.target;
+                        const end = parseInt(target.getAttribute('data-target'));
+                        let start = 0;
+                        const duration = 2000;
+                        const step = (timestamp) => {
+                            if (!start) start = timestamp;
+                            const progress = timestamp - start;
+                            const val = Math.min(Math.floor((progress / duration) * end), end);
+                            target.textContent = val;
+                            if (progress < duration) requestAnimationFrame(step);
+                            else target.textContent = end;
+                        };
+                        requestAnimationFrame(step);
+                        obs.unobserve(target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            stats.forEach(s => obs.observe(s));
+
+            // Chart Animation
+            const bars = document.querySelectorAll('.chart-bar-fill');
+            const chartObs = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.width = entry.target.getAttribute('data-width') + '%';
+                    }
+                });
+            }, { threshold: 0.2 });
+            bars.forEach(b => chartObs.observe(b));
+
+            // Filter Logic
+            const yearBtns = document.querySelectorAll('#year-filters .filter-btn');
+            const typeBtns = document.querySelectorAll('#type-filters .filter-btn');
+            const searchInput = document.getElementById('pub-search');
+            const pubItems = document.querySelectorAll('.pub-item');
+            const countDisplay = document.getElementById('current-count');
+
+            let activeYear = 'all';
+            let activeType = 'all';
+            let searchQuery = '';
+
+            function filter() {
+                let count = 0;
+                pubItems.forEach(item => {
+                    const y = item.getAttribute('data-year');
+                    const t = item.getAttribute('data-type');
+                    const title = item.querySelector('.pub-title').textContent.toLowerCase();
+                    const authors = item.querySelector('.pub-authors').textContent.toLowerCase();
+                    const journal = item.querySelector('.pub-journal-name').textContent.toLowerCase();
+                    
+                    const matchYear = activeYear === 'all' || activeYear === y;
+                    const matchType = activeType === 'all' || activeType === t;
+                    const matchSearch = title.includes(searchQuery) || authors.includes(searchQuery) || journal.includes(searchQuery);
+
+                    if (matchYear && matchType && matchSearch) {
+                        item.style.display = 'block';
+                        count++;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+                countDisplay.textContent = count;
+            }
+
+            yearBtns.forEach(btn => btn.addEventListener('click', () => {
+                yearBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                activeYear = btn.getAttribute('data-filter');
+                filter();
+            }));
+
+            typeBtns.forEach(btn => btn.addEventListener('click', () => {
+                typeBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                activeType = btn.getAttribute('data-type');
+                filter();
+            }));
+
+            searchInput.addEventListener('input', (e) => {
+                searchQuery = e.target.value.toLowerCase();
+                filter();
+            });
+
+            // Cite Copy
+            const citeBtns = document.querySelectorAll('.btn-cite');
+            const toast = document.getElementById('toast');
+            citeBtns.forEach(btn => btn.addEventListener('click', () => {
+                const text = btn.getAttribute('data-cite');
+                navigator.clipboard.writeText(text).then(() => {
+                    toast.classList.add('show');
+                    setTimeout(() => toast.classList.remove('show'), 2000);
+                });
+            }));
+        });
+    </script>
+</body>
+</html>

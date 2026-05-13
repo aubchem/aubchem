@@ -1,0 +1,121 @@
+/* Keyframe Animations */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes clipReveal {
+    from { clip-path: inset(0 100% 0 0); }
+    to { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+@keyframes drawUnderline {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes orbit {
+    from { transform: rotate(0deg) translateX(var(--orbit-radius)) rotate(0deg); }
+    to { transform: rotate(360deg) translateX(var(--orbit-radius)) rotate(-360deg); }
+}
+
+/* Motion Utilities */
+
+.anim-fade-in { opacity: 0; }
+.anim-fade-up { opacity: 0; transform: translateY(30px); }
+.anim-fade-left { opacity: 0; transform: translateX(-40px); }
+.anim-fade-right { opacity: 0; transform: translateX(40px); }
+.anim-scale-in { opacity: 0; transform: scale(0.9); }
+
+.anim-active {
+    opacity: 1 !important;
+    transform: translate(0) scale(1) !important;
+    transition: opacity 800ms cubic-bezier(0.2, 0.8, 0.2, 1), 
+                transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.stagger-1 { transition-delay: 150ms; }
+.stagger-2 { transition-delay: 300ms; }
+.stagger-3 { transition-delay: 450ms; }
+.stagger-4 { transition-delay: 600ms; }
+.stagger-5 { transition-delay: 750ms; }
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+        animation-delay: -1ms !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
+    }
+    
+    .anim-fade-in, .anim-fade-up, .anim-fade-left, .anim-fade-right, .anim-scale-in {
+        opacity: 1;
+        transform: none;
+    }
+}
