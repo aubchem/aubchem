@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research areas and projects of Aejaz Ul Bashir. MXene-based 2D materials for CO2 reduction, N2 reduction, and green fuel production.">
+    <title>Research | Aejaz Ul Bashir</title>
+    
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/research.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="dark-mode">
+
+    <!-- Canvas Background -->
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" role="navigation">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <div class="logo-icon">AUB</div>
+                <span>Aejaz Ul Bashir</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="research.html" class="nav-link active">Research</a>
+                <a href="publications.html" class="nav-link">Publications</a>
+                <a href="cv.html" class="nav-link">CV</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <a href="../index.html" class="mobile-link">Home</a>
+        <a href="about.html" class="mobile-link">About</a>
+        <a href="research.html" class="mobile-link active">Research</a>
+        <a href="publications.html" class="mobile-link">Publications</a>
+        <a href="cv.html" class="mobile-link">CV</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Research Hero -->
+    <section class="research-hero">
+        <div class="hero-vignette"></div>
+        <div class="lattice-container" id="lattice-anim">
+            <!-- Animated Lattice SVG will be injected here via JS -->
+            <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="hex-grid" width="100" height="173" patternUnits="userSpaceOnUse" patternTransform="scale(0.5)">
+                        <path d="M50 0 L100 28 L100 86 L50 115 L0 86 L0 28 Z" fill="none" stroke="currentColor" stroke-width="1" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#hex-grid)" />
+            </svg>
+        </div>
+        <div class="hero-content">
+            <span class="hero-subtitle anim-fade-up">MXene/Water Interfaces</span>
+            <h1 class="hero-title anim-fade-up" style="transition-delay: 200ms;">Engineering the Future</h1>
+            <p class="text-muted anim-fade-up" style="transition-delay: 400ms;">Electrochemical Green Fuel Production via Atomic-Scale Engineering</p>
+        </div>
+        <div class="scroll-indicator">
+            <svg viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
+        </div>
+    </section>
+
+    <!-- Thesis Narrative -->
+    <section class="thesis-section container">
+        <div class="thesis-card anim-fade-up">
+            <div class="thesis-header">
+                <span class="section-label" style="margin-left: 0;">PhD Thesis</span>
+                <h2 class="thesis-title">Understanding and Modulating MXene-Based Materials for Electrochemical Green Fuel Production</h2>
+                <div class="thesis-subtitle">ELECTROANALYTICAL & MATERIALS CHEMISTRY</div>
+            </div>
+            
+            <div class="thesis-col">
+                <h4>Fundamental Aspects</h4>
+                <ul class="thesis-list">
+                    <li>Electrochemical descriptor approach: Tafel parameters, PZC</li>
+                    <li>Electron transfer distances & Electrochemical workfunction</li>
+                    <li>Electron transfer coefficient (β) measurements</li>
+                    <li>Structure-activity correlations on engineered MXene surfaces</li>
+                </ul>
+            </div>
+            
+            <div class="thesis-col">
+                <h4>Applied Aspects</h4>
+                <ul class="thesis-list">
+                    <li>CO2 reduction reaction (CO2RR) to hydrocarbons/fuels</li>
+                    <li>N2 reduction reaction (N2RR) to ammonia (Green Synthesis)</li>
+                    <li>Electrochemical Urea & CaCO3 synthesis</li>
+                    <li>Atmospheric CO2 capture via simultaneous CaSiO3 breakdown</li>
+                </ul>
+            </div>
+
+            <div class="supervisor-credit">
+                Under supervision of <a href="https://sites.google.com/site/drpraviningole/home" target="_blank">Prof. Pravin P. Ingole</a>, Indian Institute of Technology (IIT) Delhi
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Pillars -->
+    <section class="container">
+        
+        <!-- Pillar 1 -->
+        <div class="pillar">
+            <div class="pillar-visual anim-fade-left">
+                <svg viewBox="0 0 400 400">
+                    <!-- CO2 to Products Diagram -->
+                    <circle cx="200" cy="200" r="100" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="10 5" />
+                    <g transform="translate(200,200)">
+                        <circle cx="0" cy="0" r="40" fill="var(--glass)" stroke="var(--accent)" stroke-width="2" />
+                        <text x="0" y="8" text-anchor="middle" fill="white" font-weight="bold">CO2</text>
+                        <!-- Animated outgoing products -->
+                        <path id="path1" d="M 40 0 Q 150 -100 150 -150" fill="none" stroke="var(--accent-warm)" stroke-width="2" />
+                        <text font-size="12" fill="var(--accent-warm)"><textPath href="#path1">Hydrocarbons</textPath></text>
+                    </g>
+                </svg>
+            </div>
+            <div class="pillar-text anim-fade-right">
+                <span class="section-label" style="margin-left: 0;">Electrocatalysis</span>
+                <h2 class="pillar-title">Electrochemical CO2 Reduction to Sustainable Fuels</h2>
+                <p class="pillar-body">My work focuses on the selective reduction of CO2 into high-value hydrocarbons and syngas. By stabilizing Cu(I) species in oxidative microenvironments on engineered MXene surfaces, we've achieved unprecedented control over C-C coupling reactions.</p>
+                <div class="highlight-card">
+                    <p>"Suppressed HER while accelerating C-C Coupling using Ti3C2Tx MXene interfacial layers."</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="pillar">
+            <div class="pillar-text anim-fade-left">
+                <span class="section-label" style="margin-left: 0;">Nitrogen Fixation</span>
+                <h2 class="pillar-title">Sustainable Ammonia Synthesis — Beyond Haber-Bosch</h2>
+                <p class="pillar-body">Decentralized ammonia production via N2RR is the key to sustainable agriculture. We investigate Ti2C MXene basal plane activation and surface termination engineering to lower the activation barrier for N≡N bond cleavage at room temperature.</p>
+                <div class="highlight-card">
+                    <p>"MXene surface terminations unlock N2 activation pathways previously thought impossible at room temperature."</p>
+                </div>
+            </div>
+            <div class="pillar-visual anim-fade-right">
+                <svg viewBox="0 0 400 400">
+                    <!-- N2 to NH3 Diagram -->
+                    <g transform="translate(200,200)">
+                        <circle cx="-30" cy="0" r="20" fill="var(--accent)" />
+                        <circle cx="30" cy="0" r="20" fill="var(--accent)" />
+                        <line x1="-10" y1="-5" x2="10" y2="-5" stroke="white" stroke-width="2" />
+                        <line x1="-10" y1="0" x2="10" y2="0" stroke="white" stroke-width="2" />
+                        <line x1="-10" y1="5" x2="10" y2="5" stroke="white" stroke-width="2" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="pillar">
+            <div class="pillar-visual anim-fade-left">
+                <svg viewBox="0 0 400 400">
+                    <!-- Interface/PZC Diagram -->
+                    <line x1="100" y1="300" x2="300" y2="100" stroke="var(--accent)" stroke-width="3" />
+                    <text x="310" y="100" fill="var(--accent)" font-family="JetBrains Mono">PZC</text>
+                </svg>
+            </div>
+            <div class="pillar-text anim-fade-right">
+                <span class="section-label" style="margin-left: 0;">Fundamentals</span>
+                <h2 class="pillar-title">MXene/Water Interface: A Descriptor-Driven Approach</h2>
+                <p class="pillar-body">Understanding the potential of zero charge (PZC) and electron transfer coefficients (β) allows for a predictive model of catalyst performance. This fundamental approach bridges the gap between theoretical DFT predictions and experimental reality.</p>
+                <div class="highlight-card">
+                    <p>"First electrochemical descriptor framework applied to MXene surfaces for predicting reaction kinetics."</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Arsenal -->
+    <section class="arsenal-section">
+        <div class="container">
+            <div class="section-header anim-fade-up">
+                <span class="section-label">Experimental Arsenal</span>
+                <h2 class="section-title">Techniques & Tools</h2>
+            </div>
+            <div class="arsenal-grid anim-stagger">
+                <!-- Row 1 -->
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">Cyclic Voltammetry</div></div>
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">EIS Analysis</div></div>
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">Chronoamperometry</div></div>
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">Linear Sweep Voltammetry</div></div>
+                <!-- Row 2 -->
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">pXRD</div></div>
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">Raman Spectroscopy</div></div>
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">In-situ Raman</div></div>
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">FTIR</div></div>
+                <!-- Row 3 -->
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">SEM</div></div>
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">TEM</div></div>
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">BET / TPD</div></div>
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">ICP-OES</div></div>
+                <!-- Row 4 -->
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">GC & GC-MS</div></div>
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">NMR</div></div>
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">UV-Vis</div></div>
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">scXRD</div></div>
+                <!-- Row 5 -->
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">Electrodeposition</div></div>
+                <div class="arsenal-item anim-fade-up"><div class="arsenal-label">MXene Synthesis</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header anim-fade-up">
+                <span class="section-label">Research Footprint</span>
+                <h2 class="section-title">International Collaborations</h2>
+            </div>
+            
+            <div class="map-wrapper anim-fade-up">
+                <!-- Advanced Stylized World Map -->
+                <div class="map-container">
+                    <svg viewBox="0 0 1000 500" class="world-map-svg">
+                        <path d="M150,150 Q200,100 250,150 T350,150 M450,100 Q500,50 550,100 T650,100 M750,200 Q800,150 850,200 T950,200 M200,300 Q250,250 300,300 T400,300 M600,350 Q650,300 700,350 T800,350" stroke="rgba(255,255,255,0.05)" fill="none" stroke-width="2" />
+                        <!-- Connection Lines -->
+                        <path d="M710 260 Q 600 120 510 180" class="connection-line line-1" />
+                        <path d="M710 260 Q 450 200 200 200" class="connection-line line-2" />
+                    </svg>
+
+                    <!-- Interaction Points -->
+                    <div class="map-point point-delhi" style="top: 52%; left: 71%;">
+                        <div class="point-dot pulse"></div>
+                        <div class="point-tag">
+                            <span class="tag-loc">IIT Delhi</span>
+                            <span class="tag-status">Primary Hub</span>
+                        </div>
+                    </div>
+
+                    <div class="map-point point-hungary" style="top: 36%; left: 51%;">
+                        <div class="point-dot pulse accent-warm"></div>
+                        <div class="point-tag">
+                            <span class="tag-loc">Univ. of Szeged</span>
+                            <span class="tag-status">International Fellow</span>
+                        </div>
+                    </div>
+
+                    <div class="map-point point-usa" style="top: 40%; left: 20%;">
+                        <div class="point-dot"></div>
+                        <div class="point-tag">
+                            <span class="tag-loc">USA</span>
+                            <span class="tag-status">ECS Membership</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collaboration-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">02+</div>
+                        <div class="stat-label">Continents</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">05+</div>
+                        <div class="stat-label">Institutions</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">15+</div>
+                        <div class="stat-label">Global Projects</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questions -->
+    <section class="questions-section">
+        <div class="container">
+            <div class="question">"What if we could produce ammonia without fossil fuels?"</div>
+            <div class="question">"Can a 2D material interface replace a century-old industrial process?"</div>
+            <div class="question">"How do surface atoms decide what molecule to make?"</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../index.html" class="nav-logo" style="margin-bottom: 20px;">
+                        <div class="logo-icon">AUB</div>
+                        <span>Aejaz Ul Bashir</span>
+                    </a>
+                    <p class="feature-desc" style="font-size: 0.9rem;">Advancing sustainable energy solutions through electrochemical innovation at the atomic scale.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="research.html">Research Areas</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="cv.html">Curriculum Vitae</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Current Institution</h4>
+                    <p class="feature-desc" style="font-size: 0.9rem;">
+                        Electrochemistry Division,<br>
+                        Department of Chemistry,<br>
+                        Indian Institute of Technology (IIT) Delhi,<br>
+                        Hauz Khas, New Delhi 110016
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://scholar.google.com/citations?user=hjD2JRMAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+                        <li><a href="https://www.researchgate.net/profile/Aejaz-Ul-Bashir" target="_blank">ResearchGate</a></li>
+                        <li><a href="https://orcid.org/0000-0002-2627-6318" target="_blank">ORCID</a></li>
+                        <li><a href="https://www.linkedin.com/in/aejaz-ul-bashir-4b4719210/" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aejaz Ul Bashir &middot; Designed with precision</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/particles.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Sequential fade for questions
+            const questions = document.querySelectorAll('.question');
+            const qObs = new IntersectionObserver((entries) => {
+                entries.forEach((entry, idx) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.transition = 'opacity 1s ease, transform 1s ease';
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }, idx * 400);
+                        qObs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            questions.forEach(q => {
+                q.style.transform = 'translateY(20px)';
+                qObs.observe(q);
+            });
+        });
+    </script>
+</body>
+</html>
